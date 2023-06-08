@@ -44,3 +44,6 @@ Replicate structure of project with tests
 The most important is test in application layer and domain layer. User phpunit for unitary and behat for functional test.
 
 Run the tests with `php bin/phpunit`
+
+###Uml
+![uml](doc/img/UML.jpg)
