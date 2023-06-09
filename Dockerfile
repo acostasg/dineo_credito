@@ -20,6 +20,9 @@ RUN docker-php-ext-install \
     pdo \
     pdo_pgsql
 
+# Configura el DocumentRoot de Apache
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+
 # Enable Apache rewrite module
 RUN a2enmod rewrite
 
@@ -33,11 +36,24 @@ RUN composer install --no-scripts --no-autoloader
 # Copy application code
 COPY . /var/www/html
 
+# Establece los permisos adecuados para los archivos del proyecto
+RUN chown -R www-data:www-data /var/www/html
+RUN chmod -R 775 /var/www/html/var
+
+# Copia la configuración del virtual host de Apache
+COPY docker/vhost.conf /etc/apache2/sites-available/000-default.conf
+
+# Habilita el sitio de Apache
+RUN a2ensite 000-default
+
 # Generate optimized Composer autoloader
 RUN composer dump-autoload --optimize --no-dev --classmap-authoritative
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html
+
+# Reinicia el servicio de Apache
+RUN service apache2 restart
 
 # Expose port 80
 EXPOSE 80

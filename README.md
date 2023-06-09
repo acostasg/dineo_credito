@@ -26,6 +26,13 @@ UI
 Application (Application Layer with use case)
 The use case is the core of the application.
 
+### URL
+Admin:
+http://localhost/admin
+
+Web:
+http://localhost
+
 ### Appplication
 
 Domain (Domain Layer, with entities and repositories interfaces)
@@ -45,5 +52,5 @@ The most important is test in application layer and domain layer. User phpunit f
 
 Run the tests with `php bin/phpunit`
 
-###Uml
+### Uml
 ![uml](doc/img/UML.jpg)

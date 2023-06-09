@@ -4,6 +4,8 @@ framework:
     #csrf_protection: true
     http_method_override: false
     handle_all_throwables: true
+    assets:
+        json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
 
     # Enables session support. Note that the session will ONLY be started if you read or write from it.
     # Remove or comment this section to explicitly disable session support.
@@ -21,5 +23,6 @@ framework:
 when@test:
     framework:
         test: true
+        translator: { fallbacks: ['%locale%'] }
         session:
             storage_factory_id: session.storage.factory.mock_file
