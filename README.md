@@ -6,24 +6,17 @@
 
 `composer install`
 
-### DDD
+## DDD
 This project is sample stack Domain Driven Design (DDD)
 
 ![DDD](doc/img/img.png)
 
-layers:
+### layers:
 
+In this case in the bundle Admin have the layers domain, application and infrastructure.
 ![layers](doc/img/layers.png)
 
-### UI (User Interface)
-
-View layer:
-CLI: ommand ci for console (migrations, etc..)
-Api: Endpoint for http request with api rest
-Twig: template engine and controller to call to use case application layer
-UI
-
-Application (Application Layer with use case)
+### Application (Application Layer with use case)
 The use case is the core of the application.
 
 ### URL
@@ -33,7 +26,7 @@ http://localhost/admin
 Web:
 http://localhost
 
-### Appplication
+### Application
 
 Domain (Domain Layer, with entities and repositories interfaces)
 The most important layer is the domain layer. In this layer we have the entities, services and repositories used for application layer.
@@ -45,12 +38,23 @@ The infrastructure layer is the layer that contains the repositories implementat
 
 ### Infrastructure
 
-### Tests
-Replicate structure of project with tests
+In this layer have the implementation of repositories interfaces from domain for doctrine and postgreSQL, you view docker-composer for more info..
+
+![posrtgreSQL](doc/img/postgreSQL.png)
+
+### UI (User Interface)
+
+### View layer:
+Twig: template engine and controller to call to use case application layer
+
+## Tests
+Replicate structure of project with tests PHPUnit.
 
 The most important is test in application layer and domain layer. User phpunit for unitary and behat for functional test.
 
-Run the tests with `php bin/phpunit`
+Run the tests with `php bin/phpunit` or PHPStorm config with docker-compose:
+
+![phpunit](doc/img/test.png)
 
 ### Uml
 ![uml](doc/img/UML.jpg)

@@ -4,6 +4,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^8.2",
+    "bornfreee/tactician-domain-events": "dev-master",
     "doctrine/doctrine-bundle": "^2.4",
     "doctrine/doctrine-migrations-bundle": "3.3.x-dev",
     "doctrine/orm": "^2.9",
@@ -43,6 +44,7 @@
     "symfony/string": "^6.3",
     "symfony/translation": "^6.3",
     "symfony/twig-bundle": "v6.3.0",
+    "symfony/uid": "6.3.0",
     "symfony/validator": "^6.3",
     "symfony/var-dumper": "^6.3",
     "symfony/web-profiler-bundle": "^6.3",
