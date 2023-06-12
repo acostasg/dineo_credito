@@ -5,7 +5,7 @@ services:
   #  public: false
 
   # Use cases
-  #app\Application\:
+  #App\Application\:
     #resource: '../../src/Application/*/*/Guard/{*CommandGuard.php,*QueryGuard.php}'
       #tags:
        #- { name: app.cqrs.command_guard }

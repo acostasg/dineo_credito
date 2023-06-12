@@ -19,7 +19,7 @@ interface CityRepository
 
     public function findByName(string $name): ?City;
 
-    public function save(City $user): void;
+    public function save(City $city): void;
 
-    public function remove(City $user): void;
+    public function remove(City $city): void;
 }

@@ -6,10 +6,10 @@
 parameters:
 
 #imports:
-#    - { resource: services/aliases.yaml }
-#    - { resource: services/use_cases.yaml }
-#    - { resource: services/translator.yaml }
-#    - { resource: services/domain_events.yaml }
+    - { resource: services/aliases.yaml }
+    - { resource: services/use_cases.yaml }
+    - { resource: services/translator.yaml }
+    - { resource: services/domain_events.yaml }
 
 services:
     # default configuration for services in *this* file
@@ -41,3 +41,6 @@ services:
 
     App\Admin\Infrastructure\:
         resource: '%kernel.project_dir%/src/Admin/Infrastructure/*/{Repository,Logger}/{*Repository.php,Logger.php}'
+
+    App\Infrastructure\:
+        resource: '%kernel.project_dir%/src/Infrastructure/*/{Repository,Logger}/{*Repository.php,Logger.php}'

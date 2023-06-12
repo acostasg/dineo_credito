@@ -1,11 +1,13 @@
 services:
   # Database
- #Doctrine\ORM\EntityManager: ~
+  Doctrine\ORM\EntityManager: ~
 
   # CQRS
-  #App\Application\Shared\Bus\QueryBusInterface: '@IsEazy\WinesMesasurements\Infrastructure\Shared\Tactician\Bus\QueryBus'
-  #App\Application\Shared\Bus\SyncCommandBusInterface: '@IsEazy\WinesMesasurements\Infrastructure\Shared\Tactician\Bus\SyncCommandBus'
-  #App\Application\Shared\Bus\AsyncCommandBusInterface: '@IsEazy\WinesMesasurements\Infrastructure\Shared\Tactician\Bus\AsyncCommandBus'
+  #App\Application\Shared\Bus\QueryBusInterface: '@App\Infrastructure\Shared\Tactician\Bus\QueryBus'
+  #App\Application\Shared\Bus\SyncCommandBusInterface: '@App\Infrastructure\Shared\Tactician\Bus\SyncCommandBus'
+  #App\Application\Shared\Bus\AsyncCommandBusInterface: '@App\Infrastructure\Shared\Tactician\Bus\AsyncCommandBus'
 
-  # Repositories
-  # App\Domain\Plant\Repository\XXXXRepository: '@IsEazy\WinesMesasurements\Infrastructure\XXXX\Repository\XXXXPlantRepository'
+ # Repositories
+   App\Admin\Domain\City\Repository\CityRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\CityRepository'
+   App\Admin\Domain\Province\Repository\ProvinceRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\ProvinceRepository'
+   App\Admin\Domain\User\Repository\UserRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\UserRepository'

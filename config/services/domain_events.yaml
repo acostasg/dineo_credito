@@ -5,8 +5,8 @@ services:
 #    public: false
 
   # PlantAccess
-  #IsEazy\WinesMesasurements\Application\PlantAccess\Shared\EventListener\PlantAccessWasCreatedListener:
+  #App\Application\PlantAccess\Shared\EventListener\PlantAccessWasCreatedListener:
   #    class: ~
   #    public: true
   #    tags:
-  #        - { name: 'tactician.event_listener', event: 'IsEazy\WinesMesasurements\Domain\PlantAccess\Event\PlantAccessWasCreated' }
+  #        - { name: 'tactician.event_listener', event: 'App\Domain\PlantAccess\Event\PlantAccessWasCreated' }
