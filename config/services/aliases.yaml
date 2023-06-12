@@ -1,0 +1,11 @@
+services:
+  # Database
+ #Doctrine\ORM\EntityManager: ~
+
+  # CQRS
+  #App\Application\Shared\Bus\QueryBusInterface: '@IsEazy\WinesMesasurements\Infrastructure\Shared\Tactician\Bus\QueryBus'
+  #App\Application\Shared\Bus\SyncCommandBusInterface: '@IsEazy\WinesMesasurements\Infrastructure\Shared\Tactician\Bus\SyncCommandBus'
+  #App\Application\Shared\Bus\AsyncCommandBusInterface: '@IsEazy\WinesMesasurements\Infrastructure\Shared\Tactician\Bus\AsyncCommandBus'
+
+  # Repositories
+  # App\Domain\Plant\Repository\XXXXRepository: '@IsEazy\WinesMesasurements\Infrastructure\XXXX\Repository\XXXXPlantRepository'

@@ -1,0 +1,11 @@
+services:
+  #_defaults:
+  #  autowire: true
+  #  autoconfigure: true
+  #  public: false
+
+  # Use cases
+  #app\Application\:
+    #resource: '../../src/Application/*/*/Guard/{*CommandGuard.php,*QueryGuard.php}'
+      #tags:
+       #- { name: app.cqrs.command_guard }

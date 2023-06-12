@@ -8,6 +8,7 @@
     "doctrine/doctrine-migrations-bundle": "3.3.x-dev",
     "doctrine/orm": "^2.9",
     "monolog/monolog": "^2.2",
+    "pagerfanta/pagerfanta": "*",
     "phpdocumentor/reflection-docblock": "5.x-dev",
     "phpstan/phpdoc-parser": "1.22.x-dev",
     "sensio/framework-extra-bundle": "^6.2",

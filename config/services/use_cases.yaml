@@ -1,0 +1,15 @@
+imports:
+  - { resource: command_guards.yaml }
+  - { resource: command_validator.yaml }
+
+services:
+  #_defaults:
+  #    autowire: true
+  #    autoconfigure: true
+#    public: false
+
+  # Use cases
+  #App\Application\:
+  #  resource: '../../src/Application/*/{*Handler.php,*/*Handler.php}'
+  #  tags:
+  #    - { name: tactician.handler, typehints: true }

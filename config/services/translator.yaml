@@ -1,0 +1,18 @@
+parameters:
+  translator_allowed_locales:
+    - 'en_UK'
+    - 'es_ES'
+
+services:
+  _defaults:
+    public: false
+    autowire: true
+    autoconfigure: true
+
+  # sample event listener
+  #App\Infrastructure\Shared\Symfony\EventListener\TranslatorRequestListener:
+  #    class: ~
+  #    public: true
+  #    arguments: ['%translator_allowed_locales%']
+  #    tags:
+  #       - { name: kernel.event_listener, event: kernel.request }

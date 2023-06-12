@@ -1,0 +1,12 @@
+services:
+  #_defaults:
+  #    autowire: true
+  #    autoconfigure: true
+#    public: false
+
+  # PlantAccess
+  #IsEazy\WinesMesasurements\Application\PlantAccess\Shared\EventListener\PlantAccessWasCreatedListener:
+  #    class: ~
+  #    public: true
+  #    tags:
+  #        - { name: 'tactician.event_listener', event: 'IsEazy\WinesMesasurements\Domain\PlantAccess\Event\PlantAccessWasCreated' }
