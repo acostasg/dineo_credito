@@ -74,4 +74,17 @@ class Authentication extends AggregateRoot implements UserInterface
     {
         return $this->user->getId()->toRfc4122();
     }
+
+    public static function create(
+        User $user,
+        string $email,
+        string $password
+    ): self
+    {
+        return new self(
+            $user,
+            $email,
+            $password
+        );
+    }
 }

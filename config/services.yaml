@@ -28,10 +28,10 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-    admin.blog_post:
-        class: App\Admin\UI\BlogPostAdmin
-        tags:
-            - { name: sonata.admin, model_class: App\Admin\Infrastructure\Doctrine\Entity\BlogPost, manager_type: orm, label: 'Blog post' }
+#    admin.login:
+        #class: App\Admin\UI\AdminLoginForm
+            #tags:
+            #- { name: sonata.admin, model_class: App\Admin\Infrastructure\Doctrine\Entity\BlogPost, manager_type: orm, label: 'Blog post' }
 
     App\Admin\Application\:
         resource: '%kernel.project_dir%/src/Admin/Application/*/*/{*/*DataTransformer.php,*/*Client.php,Service/*/*Creator.php,Service/*/*Finder.php,Service/*/*Calculator.php,*/*/*Updater.php,Service/*/*Transformer.php}'
@@ -44,3 +44,6 @@ services:
 
     App\Infrastructure\:
         resource: '%kernel.project_dir%/src/Infrastructure/*/{Repository,Logger}/{*Repository.php,Logger.php}'
+
+    App\Admin\UI\Controller\:
+        resource: '%kernel.project_dir%/src/Admin/UI/Controller/{*Controller.php}'

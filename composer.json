@@ -37,7 +37,7 @@
     "symfony/property-info": "6.3.0",
     "symfony/routing": "^6.3",
     "symfony/runtime": "6.3.0",
-    "symfony/security-bundle": "^6.3",
+    "symfony/security-bundle": "6.3.0",
     "symfony/security-csrf": "^6.3",
     "symfony/serializer": "6.3.0",
     "symfony/stopwatch": "^6.3",

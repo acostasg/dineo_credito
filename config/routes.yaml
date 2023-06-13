@@ -12,3 +12,9 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
+    
+login:
+    type: annotation
+    prefix: /admin/login
+    resource: App\Admin\UI\Controller\AdminLoginController
+    trailing_slash_on_root: false

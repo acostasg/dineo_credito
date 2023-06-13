@@ -11,3 +11,4 @@ services:
    App\Admin\Domain\City\Repository\CityRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\CityRepository'
    App\Admin\Domain\Province\Repository\ProvinceRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\ProvinceRepository'
    App\Admin\Domain\User\Repository\UserRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\UserRepository'
+   App\Admin\Domain\User\Repository\AuthenticationRepositoryInterface: '@App\Infrastructure\Shared\Doctrine\Repository\AuthenticationRepository'
