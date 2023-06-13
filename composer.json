@@ -45,7 +45,7 @@
     "symfony/translation": "^6.3",
     "symfony/twig-bundle": "v6.3.0",
     "symfony/uid": "6.3.0",
-    "symfony/validator": "^6.3",
+    "symfony/validator": "6.3.0",
     "symfony/var-dumper": "^6.3",
     "symfony/web-profiler-bundle": "^6.3",
     "symfony/webpack-encore-bundle": "^2.0.1",
