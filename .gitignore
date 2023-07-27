@@ -46,7 +46,3 @@ yarn-error.log
 # Files
 /.phpstorm.meta.php
 /.idea/
-/.env.php
-/docker-compose.yml
-/docker/
-/webpack.config.js
